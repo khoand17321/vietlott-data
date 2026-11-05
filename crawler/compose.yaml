@@ -1,0 +1,8 @@
+services:
+  crawler:
+    build: .
+    image: vietlott-crawler
+    volumes:
+      - ../data:/repo/data
+      - ../docs:/repo/docs
+      - ../readme.md:/repo/readme.md

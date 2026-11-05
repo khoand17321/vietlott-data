@@ -1,0 +1,9 @@
+services:
+  lab:
+    build: .
+    image: vietlott-research
+    ports:
+      - "127.0.0.1:${LAB_PORT:-8890}:8888"
+    volumes:
+      - ../data:/work/data:ro
+      - ./notebooks:/work/notebooks
